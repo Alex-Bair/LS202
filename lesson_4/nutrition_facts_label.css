@@ -1,0 +1,134 @@
+/*Entire Body Rules*/
+
+html {
+  background-color: white;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 32px;
+}
+
+body {
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  width: 684px;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  display: inline;
+  font-size: 1rem;
+}
+
+dd {
+  display: inline;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/*Header Rules*/
+
+header dl {
+  display: inline-block;
+  border: solid black;
+  border-width: 0 0 15px;
+  padding: 0 0 5px 0;
+  margin: 0 0 10px 0;
+  width: 50%;
+}
+
+header dl + dl {
+  text-align: right;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h4 {
+  border: solid black;
+  border-width: 30px 0 1px;
+  font-size: 1rem;
+  margin: 5px 0;
+  padding: 10px 0;
+}
+
+/*General Table Rules*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead th {
+  border-top: none;
+  text-align: right;
+}
+
+tbody th {
+  border-top: 1px solid black;
+  padding: 2px 0;
+  text-align: left;
+}
+
+tbody td {
+  border-top: 1px solid black;
+  padding: 2px 0;
+}
+
+tbody th dd {
+  font-weight: normal;
+}
+
+.indent {
+  border-top: none;
+  width: 1rem;
+}
+
+/*First Table Rules*/
+
+table:first-of-type tbody tr td:last-of-type {
+  text-align:right;
+}
+
+table:first-of-type tbody tr:nth-of-type(10) td {
+  border-top: 20px solid black;
+}
+
+table:first-of-type tbody tr:nth-child(n+1):nth-child(-n+7) td:last-child {
+  font-weight:bold;
+}
+
+tfoot {
+  border-top: 1px solid black;
+}
+
+tfoot td {
+  font-size: 0.75rem;
+  padding: 17px 17px 17px .7rem;
+  text-indent:-0.7rem;
+}
+
+/*Second Table Rules*/
+
+table:nth-of-type(2) {
+  font-size: 0.75rem;
+}
+
+table:nth-of-type(2) tr:nth-of-type(n+2) td {
+  border-top: none;
+}
+
+table:nth-of-type(2) .indent {
+  text-indent: 1rem;
+  width: auto;
+}
